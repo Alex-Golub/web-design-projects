@@ -6,4 +6,5 @@
 This repository contains different projects using HTML5 and CSS3
 
 ## Project List
-  - Hotel Website (HTML, CSS, Font-Awesome)
+- [x] [Hotel Website (HTML, CSS, Font-Awesome)](https://hotel-tlv-simple.netlify.app/)
+- [x] [Coffee Station (HTML, CSS (floats, cards, animations), Font-Awesome, formspree, netlify)](https://explode-at-coffee-station.netlify.app/)
