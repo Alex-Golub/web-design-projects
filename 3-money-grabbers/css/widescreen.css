@@ -1,0 +1,17 @@
+/* Section: wut? */
+#wut .items .item {
+  display: flex;
+  text-align: left;
+}
+
+#wut .items .item i {
+  margin-right: 1.2rem;
+  align-self: center;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+/* Section: Contact us */
+#contact .map {
+  flex: 3;
+}
