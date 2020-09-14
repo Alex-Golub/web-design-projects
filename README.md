@@ -11,3 +11,8 @@ This repository contains different projects using HTML5 and CSS3
 - [x] [Hotel Website (HTML, CSS, Font-Awesome)](https://hotel-tlv-simple.netlify.app/)
 - [x] [Coffee Station (Floats, Cards, Animations, Font-Awesome, Formspree, Netlify)](https://explode-at-coffee-station.netlify.app/)
 - [x] [MoneyGrabbers (Flexbox, Smooth-Scrolling, Responsive)](https://moneygrabbersinc.netlify.app/)
+<br>
+- [ ] Mini Projects
+	- [x] [Simple Presentation (Animation, Smooth-Scrolling))](https://simple-presentation.netlify.app/)
+
+

@@ -1,0 +1,115 @@
+:root {
+  --page-1-color: #8ea4d2;
+  --page-2-color: #6279b8;
+  --page-3-color: #49516f;
+  --page-4-color: #496f5d;
+  --page-5-color: #4c9f70;
+
+  --primary-white: whitesmoke;
+  --primary-dark: #333;
+  --main-transition: all 0.3s ease-in;
+
+  --animate-speed: 3s;
+}
+
+
+body {
+  font-family: monospace;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* hide vertical and horizontal scroll bars */
+  color: white;
+}
+
+#page-1 {
+  background: var(--page-1-color);
+}
+#page-2 {
+  background: var(--page-2-color);
+}
+#page-3 {
+  background: var(--page-3-color);
+}
+#page-4 {
+  background: var(--page-4-color);
+}
+#page-5 {
+  background: var(--page-5-color);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 5rem;
+  height: 100vh;
+}
+
+.page h1 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in-out;
+}
+
+@keyframes heading {
+  to {
+    transform: translateY(0) rotateZ(360deg);
+  }
+}
+
+.page p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+#page-1 p {
+  transform: translateX(-1980px);
+  animation: text var(--animate-speed) forwards ease-in-out 1s;
+}
+
+@keyframes text {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--primary-white);
+  color: var(--primary-dark);
+  text-decoration: none;
+  border: none;
+  margin: 1.2rem 0.5rem;
+  cursor: pointer;
+  transition: var(--main-transition);
+  font-size: 1.1rem;
+  
+  /* animation */
+  transform: translateY(1200px);
+  animation: btn var(--animate-speed) forwards ease-in-out 1s;
+}
+
+@keyframes btn {
+  to {
+    transform: translateY(0) rotateX(360deg);
+  }
+}
+
+.btn:hover,
+.btn-dark {
+  background: var(--primary-dark);
+  color: var(--primary-white);
+}
+
+.btn-dark:hover {
+  background: var(--primary-white);
+  color: var(--primary-dark);
+}
