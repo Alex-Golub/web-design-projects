@@ -1,0 +1,79 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 1s;
+  --main-white: #fff;
+  --main-dark: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden; /* remove scroll bars */
+  padding: 0 3rem;
+}
+
+#showcase {
+  background-color: var(--primary-color);
+  color: var(--main-white);
+  height: 100vh;
+  position: relative; /* using :before pseudo to add overlay which will be absolute */
+}
+
+#showcase::before {
+  content: "";
+  background: url("https://source.unsplash.com/user/erondu/daily") no-repeat
+    center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; /* move background picture to back */
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: inherit; /* inherit from parent (#showcase) which is 100vh */
+}
+
+#showcase h1 {
+  font-size: 4rem;
+}
+
+#showcase p {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--primary-color);
+  color: var(--main-white);
+  padding: 1rem 2rem;
+  border: none;
+  transition: all 1s ease-in-out;
+}
+
+.btn:hover {
+  background: #333;
+  transform: scale(1.5) rotateZ(360deg);
+  opacity: 0.75;
+}
