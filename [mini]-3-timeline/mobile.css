@@ -1,0 +1,30 @@
+@media(max-width: 900px) {
+  #timeline ul li div {
+    width: 250px;
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: -280px;
+  }
+}
+
+@media(max-width: 600px) {
+  #timeline ul li {
+    /* Move middle line to left side of screen */
+    margin-left: 20px;
+  }
+
+  #timeline ul li div {
+    width: calc(100vw - 80px);
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: 32px;
+  }
+
+  #timeline ul li:nth-child(even) div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--secondary-color) transparent transparent;
+  }
+}
