@@ -1,0 +1,107 @@
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--main-spacing);
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border: 2px solid var(--off-white);
+  transition: var(--main-transition);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--main-white);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-white {
+  background: transparent;
+  color: var(--main-white);
+}
+
+.btn-white:hover {
+  background: var(--main-white);
+  color: var(--primary-color);
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  color: var(--primary-color);
+}
+
+.section-center {
+  width: 85%;
+  margin: 2rem auto;
+  max-width: 1170px;
+}
+
+.btn-submit {
+  margin: 0;
+}
